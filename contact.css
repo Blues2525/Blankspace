@@ -1,0 +1,574 @@
+@font-face {
+  font-family: "Albert";
+  src: url("AlbertSans-VariableFont_wght.qttf") format(TrueType);
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-Regular.ttf") format(TrueType);
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-Light.ttf") format(TrueType);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-Medium.ttf") format(TrueType);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-Thin.ttf") format(TrueType);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-SemiBold.ttf") format(TrueType);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Thin.ttf") format(TrueType);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-ExtraLight.ttf") format(TrueType);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.ttf") format(TrueType);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Medium.ttf") format(TrueType);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RedHat";
+  src: url("RedHatDisplay-VariableFont_wght.ttf") format(TrueType);
+}
+@font-face {
+  font-family: "Urania";
+  src: url("urania-regular.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Encode";
+  src: url("EncodeSansExpanded-Light.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Hans";
+  src: url("HankenGrotesk-VariableFont_wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Hans";
+  src: url("HankenGrotesk-VariableFont_wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Hans";
+  src: url("HankenGrotesk-VariableFont_wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat-VariableFont_wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("Manrope-VariableFont_wght.ttf.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("Cairo-VariableFont_slnt,wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-VariableFont_wght.ttf") format(Truetype);
+}
+@keyframes open {
+  from {
+    height: 0;
+  }
+  to {
+    height: 15vw;
+  }
+}
+@keyframes hoverlineopen {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes openopacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes openss {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes moveup {
+  from {
+    transform: translate(0vw, 5vw);
+  }
+  to {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes moveright {
+  from {
+    transform: translate(5vw);
+  }
+  to {
+    transform: translate(0vw);
+  }
+}
+@keyframes moveleft {
+  from {
+    transform: translate(-5vw);
+  }
+  to {
+    transform: translate(0vw);
+  }
+}
+@keyframes openheight {
+  from {
+    height: 0vw;
+  }
+  to {
+    height: 5.5vw;
+    box-shadow: 0px 1px 10px rgba(195, 195, 195, 0.7333333333);
+  }
+}
+@keyframes openheightss {
+  from {
+    height: 0vw;
+  }
+  to {
+    height: 18vw;
+    box-shadow: 0px 1px 10px rgba(195, 195, 195, 0.7333333333);
+  }
+}
+body {
+  margin: 0 0;
+  height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
+.navbar {
+  width: 100%;
+  height: 0vw;
+  position: fixed;
+  background-color: white;
+  margin: 0;
+  z-index: 800 !important;
+  animation: openheight 2s forwards;
+}
+
+.navbar div:not(:first-child) {
+  margin-top: 2.1vw;
+  margin-right: -0.9vw;
+  right: 5vw;
+  position: relative;
+  font-weight: 400;
+}
+
+.navbar div .name {
+  font-family: "Raleway" !important;
+  font-size: 1.6vw;
+  color: #001763;
+  left: 8vw !important;
+  bottom: 0.3vw;
+  font-weight: 700;
+}
+
+.navbar div a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.022em;
+  font-size: 0.9vw;
+  text-align: right;
+}
+
+.navbar div {
+  float: left;
+  font-family: "Raleway";
+  text-decoration: none;
+}
+
+.navbar div:not(.hoverline) {
+  opacity: 0%;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.hoverline {
+  width: 6vw;
+  height: 0.1vw;
+  left: 4.7vw;
+  top: 1.22vw;
+  background-color: #001763;
+}
+
+.hoverline#one {
+  opacity: 0%;
+  width: 6vw !important;
+}
+
+.hoverline#two {
+  width: 9.8vw !important;
+  margin-left: -4.8vw;
+  left: 9vw;
+  opacity: 0%;
+}
+
+.hoverline#three {
+  width: 6.3vw !important;
+  margin-left: -1vw;
+  left: 5.1vw;
+  opacity: 0%;
+}
+
+.hoverline#four {
+  width: 4.7vw !important;
+  margin-left: 0.5vw;
+  left: 3.4vw;
+  opacity: 0%;
+}
+
+a.company:hover ~ .hoverline#one,
+a.products:hover ~ .hoverline#two,
+a.resources:hover ~ .hoverline#three,
+a.contact:hover ~ .hoverline#four {
+  animation: hoverlineopen 1s forwards;
+}
+
+a.company:hover, a.products:hover, a.resources:hover, a.contact:hover {
+  color: #001763;
+}
+
+.hoverpages {
+  position: fixed;
+  z-index: 400 !important;
+  top: 1vw;
+}
+
+.hoverpages .hp {
+  width: 100%;
+  height: 38vw;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 7px 5px 0px rgba(193, 193, 193, 0.75);
+  position: fixed;
+  z-index: 400 !important;
+  top: 1vw;
+  display: none;
+}
+
+.hoverpages div * {
+  display: block !important;
+}
+
+.hp .line {
+  height: 70%;
+  width: 0.1vw;
+  position: relative;
+  background-color: #001763;
+  left: 12.5vw;
+  top: 8vw;
+  z-index: 600 !important;
+}
+
+.products-hover-nav .ps2 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 15vw;
+  bottom: 20vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.products-hover-nav .ps2 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2.5vw;
+  font-weight: 500;
+}
+
+.products-hover-nav .ps3 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 40vw;
+  bottom: 47.5vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.products-hover-nav .ps3 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2.5vw;
+  font-weight: 500;
+}
+
+.hp .line2 {
+  width: 0.1vw;
+  position: relative;
+  height: 70%;
+  left: 37vw;
+  bottom: 77.5vw;
+  background-color: #001763;
+}
+
+.products-hover-nav .ps4 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 68vw;
+  bottom: 67vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.products-hover-nav .ps4 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2.5vw;
+  font-weight: 500;
+}
+
+.hp .line3 {
+  width: 0.1vw;
+  position: relative;
+  height: 70%;
+  left: 65vw;
+  bottom: 104vw;
+  background-color: #001763;
+}
+
+/* .products-hover{
+    width: 10.5vw; 
+    height: 0vw; 
+    position:relative; 
+    margin-right: -12vw !important; 
+    left: 0vw; 
+    top: 2vw; 
+    background-color: #002082;
+    display: block;
+    z-index: 50 !important;
+}
+ .products:hover > .products-hover{
+    animation: open 1.5s forwards; 
+} */
+.chevron {
+  margin-left: 1vw;
+  opacity: 50% !important;
+}
+
+.GetDemo {
+  opacity: 100%;
+  border: #001763 0.1vw solid;
+  background-color: #001763;
+  color: white;
+  font-size: 0.9vw;
+  font-weight: 500;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.6vw;
+  padding-bottom: 0.6vw;
+  letter-spacing: 0.2px;
+  position: relative;
+  margin-top: -1.5vw;
+  left: 4vw !important;
+  margin-left: 0.3vw;
+  cursor: pointer;
+  font-family: "Raleway";
+}
+
+.GetDemo:hover {
+  color: #001763;
+  background-color: transparent;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.logo {
+  margin-top: 1.9vw !important;
+  margin-left: -1.2vw;
+  margin-right: 44.8vw;
+  width: 2.9vw;
+  height: 1.67vw;
+  image-rendering: optimizeQuality;
+}
+
+.bars {
+  display: none;
+}
+
+.contacts {
+  height: 42vw;
+  width: 73vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  top: 9vw;
+  left: 13vw;
+}
+
+.contacts .block {
+  height: 42vw;
+  width: 30vw;
+  background-color: #001763;
+  position: relative;
+}
+
+.contacts .header {
+  font-family: "Raleway";
+  font-size: 2.2vw;
+  color: white;
+  position: relative;
+  bottom: 35vw;
+  left: 4vw;
+  text-align: left;
+}
+
+.contacts .desc {
+  font-family: "Raleway";
+  font-size: 0.95vw;
+  color: white;
+  position: relative;
+  bottom: 34vw;
+  width: 23vw;
+  left: 4vw;
+  text-align: left;
+}
+
+.calling {
+  bottom: 31vw;
+  position: relative;
+  left: 4vw;
+  color: white;
+}
+
+.calling .call-header {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+}
+
+.calling .call-description {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 0.95vw;
+  margin-bottom: 0.5vw;
+}
+
+.chat {
+  position: relative;
+  bottom: 29vw;
+  color: white;
+  left: 4vw;
+}
+
+.chat .chat-header {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+}
+
+.chat .chat-description {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 0.95vw;
+  margin-bottom: 0.5vw;
+}
+
+.social-media a i {
+  color: white;
+  bottom: 22vw;
+  position: relative;
+  margin-right: 1.4vw;
+  transform: scale(1.3);
+  left: 4.5vw;
+}
+
+.forms {
+  position: relative;
+  bottom: 57.9vw;
+  left: 33vw;
+}
+
+.forms label {
+  font-family: "Raleway";
+  font-size: 0.9vw;
+  color: #001763;
+  position: relative;
+}
+
+.forms input {
+  border: #001763 0.1vw solid;
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+  width: 17vw;
+  margin-bottom: 2vw;
+  margin-top: 1vw;
+}
+
+.forms input.email, .forms input.phone, .forms input.companys, .forms input.message {
+  width: 37vw !important;
+}
+
+.forms input.message {
+  height: 5vw;
+}
+
+.lname {
+  position: relative;
+  bottom: 6.35vw !important;
+  left: 20vw;
+}
+
+.email, .phone, .companys, .message {
+  bottom: 6.7vw;
+  position: relative;
+}
+
+.forms .submit {
+  font-family: "Raleway";
+  background-color: #001763;
+  color: white;
+  text-align: center;
+  font-size: 0.8vw;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
+  position: relative;
+  bottom: 7.8vw;
+  padding-left: 19vw;
+  padding-right: 19vw;
+}/*# sourceMappingURL=contact.css.map */

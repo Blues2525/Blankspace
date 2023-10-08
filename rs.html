@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <link href="style.css" rel="stylesheet">
+    <link href="rs.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c63ccb1ca2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar" id="nav-bar">
+        <div><img src="logoimage.png" href="Mainpage.html" class="logo" id="logo"><div class="name"><a href=mainpage.html class="Bayter">BAYTER</a></div></div>
+        <div class="company" id="comp">
+            <a href='#!' onclick="trial(this.id)" class="company navs" id="1">
+                Company <i class="fa-solid fa-chevron-down" class="chevron arrow" id="chev-1"></i>
+            </a>
+            <div class="hoverline" id="hl-1"></div>
+        </div>
+        <div class="products" id="prod">
+            <a href='#!' onclick="trial(this.id)" class="products navs" id="2">
+                Products & Services <i class="fa-solid fa-chevron-down" class="chevron arrow" id="chev-2"></i>
+            </a>
+            <div class="hoverline" id="hl-2"></div>
+        </div>
+        <div class="resources" id="reso">
+            <a href='#!' onclick="trial(this.id)" class="resources navs" id="3">
+                Resources <i class="fa-solid fa-chevron-down" class="chevron arrow" id="chev-3"></i>
+            </a>
+            <div class="hoverline" id="hl-3"></div>
+        </div>
+        <div class="contact" id="cont">
+            <a href='#' class="contact" id="4">
+                 Contact
+            </a>
+            <div class="hoverline" id="hl-4"></div>
+        </div>
+        <div><button class="GetDemo"><a href="cont.html" class="gda">Start Demo</a></button></div>
+        <button onclick="inss()" class="bars"><i class="fa-solid fa-bars" id="bars"></i></button>
+    </div>
+
+    <div class="hoverpages">
+        <div class="company-hover hp"  id="nav-1">
+            <div class="line"></div>
+            <div class="company-hover-nav">
+                <div class="cs2"><a href="au.html">About Us</a></div>
+                <div class="cs2">Company Overview</div>
+                <div class="cs2">Mission Statement</div>
+                <div class="cs2"><a href="tm.html">Team Members</a></div>
+                <div class="cs2">Founder</div>
+                <div class="cs2">Lead Consultant</div>
+                <div class="cs2">Data Quality Analyst</div>
+                <div class="cs2">Data Governance Specialist</div>
+                <div class="cs2">Analytics Consultant/Expert</div>
+            </div>
+        </div>
+        <div class="products-hover hp" id="nav-2">
+            <div class="line"></div>
+            <div class="products-hover-nav">
+                <div class="ps2"><a href="rs.html">Resources and Staffing</a></div>
+                <div class="ps2">Data Ingestion Resources</div>
+                <div class="ps2">Web Application Development</div>
+                <div class="ps2">Information Architecture</div>
+                <div class="ps2">Cloud Management</div>
+                <div class="ps2"><a href="ca.html"> Cloud Architecture </a></div>
+                <div class="ps2">Cloud Consultation</div>
+                <div class="ps2">Cloud Migration Services</div>
+                <div class="ps2">Cloud Architecture Design</div>
+                <div class="ps2">Cloud Cost Optimization</div>
+                <div class="ps2">Cloud Application Development </div>
+                <div class="ps2">Cloud Monitoring and Management </div>
+                <div class="ps3"><a href="dms.html"> Data Management Services </a></div>
+                <div class="ps3">Data Governance Literacy and Implementation </div>
+                <div class="ps3">Data Quality and Cleansing Management</div>
+                <div class="ps3">Data Integration and Ingestion (Cloud and On-Prem) </div>
+                <div class="ps3">Master Data Management (MDM) </div>
+                <div class="ps3">Digital Transformation and Automation </div>
+                <div class="ps3"><a href="dabi.html"> Data Analytics and Business Intelligence </a></div>
+                <div class="ps3">Data Strategy and Roadmap </div>
+                <div class="ps3">Data Privacy and Security</div>
+                <div class="ps3">Data Visualization and Reporting</div>
+                <div class="ps4"><a href="te.html"> Training and Education </a></div>
+                <div class="ps4">Business and Technology Alignment</div>
+                <div class="ps4">Data Literacy for Business and Leadership </div>
+                <div class="ps4">Data Project Management</div>
+                <div class="ps4">Agile Project Management</div>
+            </div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="resources-hover hp" id="nav-3">
+            <div class="line"></div>
+            <div class="resources-hover-nav">
+                <div class="rs2"><a href="cso.html">Case Study One</a></div>
+                <div class="rs2">Data Ingestion Resources</div>
+                <div class="rs2">Web Application Development</div>
+                <div class="rs2">Information Architecture</div>
+                <div class="rs2">Data Ingestion Resources</div>
+                <div class="rs2">Web Application Development</div>
+                <div class="rs2"><a href="cst.html">Case Study Two</a></div>
+                <div class="rs2">Data Ingestion Resources</div>
+                <div class="rs2">Web Application Development</div>
+                <div class="rs2">Information Architecture</div>
+                <div class="rs2">Data Ingestion Resources</div>
+                <div class="rs2">Web Application Development</div>
+                <div class="rs3"><a href="csth.html">Case Study Three</a></div>
+                <div class="rs3">Data Ingestion Resources</div>
+                <div class="rs3">Web Application Development</div>
+                <div class="rs3">Information Architecture</div>
+                <div class="rs3">Information Architecture</div>
+                <div class="rs3"><a href="csf.html">Case Study Four</a></div>
+                <div class="rs3">Data Ingestion Resources</div>
+                <div class="rs3">Web Application Development</div>
+                <div class="rs3">Information Architecture</div>
+                <div class="rs3">Information Architecture</div>
+            </div>
+            <div class="line2"></div>
+        </div>
+    </div>
+
+    <div class="ResandStaf">
+        <div class="header"> Resources and Staffing </div>
+        <div class="exp">Find Ways to Maximize the Efficency of Data Management Utilization </div>
+        <div class="descs"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci a vulputate. 
+            Ut fermentum nibh nec turpis scelerisque. Vivamus porta, massa eget imperdiet Vivamus porta imperdiet
+            vivamus porta, massa eget imperdiet.
+        </div>
+        <div class="liners"></div>
+        <button class="gde">Get Demo</button>
+    </div>
+    <div class="ResandStafInfo">
+        <div class="info-zero tag">
+            <div class="detail det-one">
+                <i class="fa-solid fa-cloud"></i>
+                <div class="header">Topic</div>
+                <div class="de">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci a vulputate. 
+                    Ut fermentum nibh nec turpis scelerisque.  </div>
+            </div>
+            <div class="detail det-two">
+                <i class="fa-regular fa-floppy-disk"></i>
+                <div class="header">Topic</div>
+                <div class="de">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci a vulputate. 
+                    Ut fermentum nibh nec turpis scelerisque. </div>
+            </div>
+            <div class="detail det-three">
+                <i class="fa-solid fa-database"></i>
+                <div class="header">Topic</div>
+                <div class="de">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci a vulputate. 
+                    Ut fermentum nibh nec turpis scelerisque. </div>
+            </div>
+        </div>
+        <div class="info-one tag">
+            <div class="header"> Activate the Ultimate Potential With Data Management </div>
+            <div class="detail det-one"> Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci a vulputate. 
+                Ut fermentum nibh nec turpis scelerisque. Ut fermentum nibh nec turpis scelerisque. </div>
+            <button class="Reqdemo"> Request Demo > </button>
+            <div class="frame"></div>
+            <div class="frame2"></div>
+        </div>
+         <div class="info-two tag">
+            <div class="header"> Activate the Ultimate Potential With Data Management </div>
+            <div class="detail det-one"> Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci a vulputate. 
+                Ut fermentum nibh nec turpis scelerisque. Ut fermentum nibh nec turpis scelerisque. </div>
+            <button class="Reqdemo"> Request Demo > </button>
+            <div class="frame"></div>
+            <div class="frame2"></div>
+        </div>
+        <div class="info-three tag">
+            <div class="header"> Activate the Ultimate Potential With Data Management </div>
+            <div class="detail det-one"> Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci a vulputate. 
+                Ut fermentum nibh nec turpis scelerisque. Ut fermentum nibh nec turpis scelerisque. </div>
+            <button class="Reqdemo"> Request Demo > </button>
+            <div class="frame"></div>
+            <div class="frame2"></div>
+        </div> 
+        
+        <div class="info-four tag">
+            <div class="header"> Activate the Ultimate Potential With Data Management </div>
+            <div class="detail det-one"> Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci a vulputate. 
+                Ut fermentum nibh nec turpis scelerisque. Ut fermentum nibh nec turpis scelerisque. </div>
+            <button class="Reqdemo"> Request Demo > </button>
+            <div class="frame"></div>
+            <div class="frame2"></div>
+        </div>
+        <div class="info-five">
+            <div class="detail det-one"></div>
+            <div class="detail det-two"></div>
+            <div class="detail det-three"></div>
+        </div>
+    </div>
+
+    <div class="trynow2 tag">
+        <div class="improve-headers"> Improve Sales Productivitiy With Business Intelligence Models </div>
+        <button class="gd"> Get Demo </button>
+        <button class="cu"> Contact Us </button>
+    </div>
+    <div class="ending"> 
+        <!-- <img src="Logoimage.png" class="thelogo"> --> <div class="logoname"> BAYTER </div> 
+        <div class="desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra pretium orci.
+            Sed pharetra pretium orci a vulputate. Lorem ipsum dolor sit amet Llorem ipsum dolor sit amet.</div>
+        
+        <div class="ending-nav">
+            <div class="company">Company</div>
+            <div class="aboutus">About Us </div>
+            <div class="feature">Features</div>
+            <div class="contact"> Contact </div>
+        </div>
+     
+        <div class="ending-nav-info">
+            <div class="navinfosone">
+                <div><a href="#">Samples</a></div>
+                <div><a href="#">Samples</a></div>
+                <div><a href="#">Samples</a></div>
+                <div><a href="#">Samples</a></div>
+            </div>
+            <div class="navinfostwo">
+                <div><a href="#">Samples</a></div>
+                <div><a href="#">Samples</a></div>
+                <div><a href="#">Samples</a></div>
+            </div>
+            <div class="navinfosthree">
+                <div><a href="#">Samples</a></div>
+                <div><a href="#">Samples</a></div>
+                <div><a href="#">Samples</a></div>
+            </div>
+            <div class="navinfosfour">
+                <div><a href="#">Samples</a></div>
+                <div><a href="#">Samples</a></div>
+            </div>
+        </div> 
+        <div class="liners"></div>
+    </div>
+
+    <script>
+    function trial(clicks_id){
+        let hovernav = document.getElementById(`nav-${clicks_id}`); 
+        let chevrotate = document.getElementById(`chev-${clicks_id}`);
+        let clicked =  document.getElementById(clicks_id);  
+        let hoverline = document.getElementById(`hl-${clicks_id}`)
+        const collection = document.getElementsByClassName("hp");
+        const linecollect = document.getElementsByClassName("hoverline");  
+        const navcollect = document.getElementsByClassName("navs");  
+        const arrow = document.getElementsByClassName("arrow");
+        if (hovernav.style.display == 'block') {
+            hovernav.style.zIndex='550'; 
+            hovernav.style.display='none'; 
+            chevrotate.style.transform = 'rotate(0deg)'; 
+            clicked.style.color='black'; 
+            hoverline.style.opacity='0%'; 
+            } else {
+            for(var i=0, len=collection.length; i<len; i++)
+            {
+                document.getElementsByClassName("hp")[i].style.display = "none"; 
+            }
+            for(var i=0, leng=linecollect.length; i<leng; i++)
+            {
+                document.getElementsByClassName("hoverline")[i].style.opacity = "0%"; 
+            }
+            for(var i=0, lengt=navcollect.length; i<lengt; i++)
+            {
+                document.getElementsByClassName("navs")[i].style.color = "black"; 
+            }
+            document.getElementById('chev-1').style.transform = 'rotate(0deg)'; 
+            document.getElementById('chev-2').style.transform = 'rotate(0deg)'; 
+            document.getElementById('chev-3').style.transform = 'rotate(0deg)'; 
+            hovernav.style.display='block';
+            hoverline.style.opacity = '100%'; 
+            clicked.style.color='#001763'; 
+            chevrotate.style.transform = 'rotate(180deg)'; 
+        }
+    }
+
+    function trialrun(press_id){
+        const collecting = document.getElementsByClassName('square'); 
+        for(var i=0, len=collecting.length; i<len; i++)
+            {
+                document.getElementsByClassName("square")[i].classList.remove("inviews");
+            }
+        document.getElementById(press_id).classList.add("inviews");
+    }
+
+    function opentext(squeeze_id){
+        document.getElementById('ione').classList.remove("show");
+        document.getElementById('itwo').classList.remove("show");
+        document.getElementById('ithree').classList.remove("show");
+        document.getElementById(`i${squeeze_id}`).classList.toggle("show");
+    }
+
+    function openquestions(easy_id){
+        const ads = document.getElementsByClassName("ad");
+        for(var i=0, len=ads.length; i<len; i++)
+            {
+                document.getElementsByClassName("ad")[i].style.transform = "rotate(0deg)"; 
+            }
+        document.getElementById('loner').classList.remove("shower");
+        document.getElementById('ltwor').classList.remove("shower");
+        document.getElementById('lthreer').classList.remove("shower");
+        document.getElementById('lfour').classList.remove("shower"); 
+        document.getElementById(`ad${easy_id}`).style.transform = "rotate(180deg)"; 
+        document.getElementById(`l${easy_id}`).classList.add("shower");
+    }
+
+    let elementsArray = document.querySelectorAll(".tag");
+    console.log(elementsArray);
+    window.addEventListener('scroll', fadeIn ); 
+    function fadeIn() {
+    for (var i = 0; i < elementsArray.length; i++) {
+        var elem = elementsArray[i]
+        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+        if (distInView < 0) {
+            elem.classList.add("View");
+        } else {
+            elem.classList.remove("View");
+        }
+    }
+    }
+    fadeIn();
+
+
+    /* function openss(sspress_id){
+        document.getElementById('sn-company-arrow').style.transform = "rotate(0deg)"; 
+        document.getElementById('sn-products-arrow').style.transform = "rotate(0deg)"; 
+        document.getElementById('sn-resources-arrow').style.transform = "rotate(0deg)"; 
+        document.getElementById('sn-company-infos').classList.remove("views"); 
+        document.getElementById('sn-company').classList.remove("views"); 
+        document.getElementById('sn-products-infos').classList.remove("views"); 
+        document.getElementById('sn-products').classList.remove("views"); 
+        document.getElementById('sn-resources-infos').classList.remove("views"); 
+        document.getElementById('sn-resources').classList.remove("views");
+        document.getElementById(`${sspress_id}-infos`).classList.add("views");
+        document.getElementById(sspress_id).classList.add("views"); 
+        document.getElementById(`${sspress_id}-arrow`).style.transform = "rotate(180deg)"; 
+    } */
+
+    function openss(sspress_id){
+        let hovernav = document.getElementById(`${sspress_id}-infos`);
+        let regid = document.getElementById(sspress_id);
+        let chevrotate = document.getElementById(`${sspress_id}-arrow`);
+        const collection = document.getElementsByClassName("inf"); 
+        const collect = document.getElementsByClassName("infi"); 
+        if (hovernav.style.display == 'block') {
+            hovernav.style.zIndex='550'; 
+            hovernav.style.display='none'; 
+            chevrotate.style.transform = 'rotate(0deg)'; 
+            regid.style.backgroundColor = 'white'; 
+            } else {
+            for(var i=0, len=collection.length; i<len; i++)
+            {
+                document.getElementsByClassName("inf")[i].style.display = "none"; 
+            }
+            for(var i=0, len=collect.length; i<len; i++)
+            {
+                document.getElementsByClassName("infi")[i].style.backgroundColor = "white"; 
+            }
+            document.getElementById('sn-company-arrow').style.transform = "rotate(0deg)"; 
+            document.getElementById('sn-products-arrow').style.transform = "rotate(0deg)"; 
+            document.getElementById('sn-resources-arrow').style.transform = "rotate(0deg)"; 
+            regid.style.backgroundColor = '#fafafa'; 
+            hovernav.style.display='block';
+            chevrotate.style.transform = 'rotate(180deg)'; 
+        }
+    }
+    
+    function exitss(){
+        document.getElementById("smallnav").classList.remove("viewing"); 
+        document.body.style.overflow = "hidden";
+    }
+
+    function inss(){
+        document.getElementById("smallnav").classList.add("viewing"); 
+        document.body.style.overflow = "hidden";
+    }
+    
+
+    /* window.onscroll = function() {scrollFunction()};
+    const nodeList = document.querySelectorAll(".hoverline");
+    function scrollFunction() {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        document.getElementById("nav-bar").style.boxShadow = "0px 1px 10px #c3c3c3bb"; 
+        document.getElementById("comp").style.marginTop = "2.2vw";
+        document.getElementById("reso").style.marginTop = "2.2vw";
+        document.getElementById("prod").style.marginTop = "2.2vw";
+        document.getElementById("cont").style.marginTop = "2.2vw";
+        document.getElementById("logo").style.marginTop = "1.7vw";
+
+        for (let i = 0; i < nodeList.length; i++) {
+             nodeList[i].style.backgroundColor = "#002082";
+        }
+
+     }else {
+        document.getElementById("nav-bar").style.boxShadow = "none"; 
+        document.getElementById("comp").style.marginTop = "2.5vw";
+        document.getElementById("reso").style.marginTop = "2.5vw";
+        document.getElementById("prod").style.marginTop = "2.5vw";
+        document.getElementById("cont").style.marginTop = "2.5vw";
+        document.getElementById("logo").style.marginTop = "2.1vw";
+
+        for (let i = 0; i < nodeList.length; i++) {
+             nodeList[i].style.backgroundColor = "white";
+        }
+    }
+    } */
+</script>
+</body>

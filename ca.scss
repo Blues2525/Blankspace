@@ -1,0 +1,458 @@
+$colortheme: #001763; 
+body{
+    height: 500vh !important; 
+}
+.clouda{
+    width: 100%; 
+    height: 50vw; 
+    background-color: $colortheme;
+}
+.clouda .header{
+    font-family: "Raleway";
+    font-size: 2.2vw; 
+    color: #6d88e1; 
+    position:relative; 
+    top: 12vw; 
+    left: 5vw; 
+}
+.clouda .exp{
+    font-family: "Raleway";
+    font-size: 2.8vw; 
+    color: white; 
+    position:relative; 
+    top: 13vw; 
+    left: 5vw; 
+    width: 40vw; 
+}
+.clouda .liners{
+    width: 0.1vw; 
+    height: 35vw; 
+    background-color: white;
+    top: -10vw; 
+    position:relative; 
+    left: 2vw;
+    opacity: 100%;
+}
+.clouda .descs{
+    font-family: "Raleway";
+    font-size: 1.1vw; 
+    color: white; 
+    position:relative; 
+    width: 35vw; 
+    top: 15.5vw; 
+    left: 5vw; 
+    line-height: 1.8vw; 
+
+}
+.clouda .gde{
+    background-color: transparent; 
+    font-family: "Raleway";
+    color: white; 
+    border: white 0.1vw solid; 
+    font-size: 1.1vw; 
+    font-weight: 600;
+    padding-left: 2.5vw; 
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    padding-right: 2.5vw;
+    position: relative; 
+    top: -16vw;
+    left: 5vw;  
+}
+.cloudaInfo .info-zero .detail{
+    height: 27vw; 
+    width: 23vw; 
+    float: left; 
+    top: 15vw; 
+    position: relative; 
+    left: 9.5vw; 
+    margin-left: 4vw;
+}
+.cloudaInfo .info-zero .detail i{
+    transform: scale(8);
+    color: $colortheme;
+    position: relative; 
+    left: 5.0vw; 
+    top: 7vw; 
+}
+.cloudaInfo .info-zero .detail .header{
+    font-family: "Raleway";
+    font-size: 2.7vw; 
+    color: $colortheme; 
+    font-weight: 200;
+    position:relative; 
+    top: 14.5vw; 
+
+}
+.cloudaInfo .info-zero .detail .de{
+    font-family: "Raleway";
+    font-size: 1.0vw; 
+    color: $colortheme; 
+    font-weight: 300;
+    position:relative; 
+    top: 15.7vw;
+    line-height: 1.8vw;
+    width: 21vw; 
+    left: 0.5vw;  
+
+}
+.cloudaInfo .info-zero .detail .de{
+    font-family: "Raleway";
+    font-size: 1.0vw; 
+    color: $colortheme; 
+    font-weight: 300;
+    position:relative; 
+    top: 15.7vw;
+    line-height: 1.8vw;
+    width: 21vw; 
+    left: 0.5vw;  
+
+}
+.cloudaInfo .info-zero .det-one{
+    border-right: $colortheme 0.1vw solid;
+}
+.cloudaInfo .info-zero .det-two{
+    border-right: $colortheme 0.1vw solid;
+}
+.cloudaInfo .info-one .header{
+    font-family: "Raleway";
+    font-size: 2.5vw; 
+    left: 10vw; 
+    width: 25vw; 
+    color: black; 
+    position: relative; 
+    text-align: left; 
+    top: 30vw; 
+    line-height: 3.5vw;
+}
+.cloudaInfo .info-one .detail{
+    font-family: "Raleway";
+    font-size: 0.915vw;
+    color: black; 
+    font-weight: 200; 
+    position:relative; 
+    top: 32vw; 
+    left:10vw; 
+    width: 22vw; 
+    line-height: 1.6vw;
+}
+.cloudaInfo .info-one .Reqdemo{
+    background-color: transparent; 
+    font-family: "Raleway";
+    color: $colortheme; 
+    border: $colortheme 0.1vw solid; 
+    font-size: 0.9vw; 
+    font-weight: 600;
+    padding-left: 2.5vw; 
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    padding-right: 2.5vw;
+    position: relative; 
+    top: 35vw; 
+    left:10vw;  
+    cursor: pointer; 
+}
+.cloudaInfo .info-one .Reqdemo:hover{
+    background-color: $colortheme; 
+    color:white; 
+}
+.cloudaInfo .info-one .frame{
+    height: 30vw;
+    width: 45vw;
+    border: $colortheme 0.1vw solid; 
+    position: relative;
+    left: 45vw; 
+    top: 7vw; 
+}
+.cloudaInfo .info-one .frame2{
+    height: 18vw;
+    width: 27vw;
+    border: $colortheme 0.1vw solid; 
+    position: relative;
+    left: 68vw; 
+    top: -7vw; 
+}
+.cloudaInfo .info-two .header{
+    font-family: "Raleway";
+    font-size: 2.5vw; 
+    left: 63vw; 
+    width: 25vw; 
+    color: black; 
+    position: relative; 
+    text-align: left; 
+    top: 9vw; 
+    line-height: 3.5vw;
+}
+.cloudaInfo .info-two .detail{
+    font-family: "Raleway";
+    font-size: 0.915vw;
+    color: black; 
+    font-weight: 200; 
+    position:relative; 
+    top: 10.5vw; 
+    left:63vw; 
+    width: 22vw; 
+    line-height: 1.6vw;
+}
+.cloudaInfo .info-two .Reqdemo{
+    background-color: transparent; 
+    font-family: "Raleway";
+    color: $colortheme; 
+    border: $colortheme 0.1vw solid; 
+    font-size: 0.9vw; 
+    font-weight: 600;
+    padding-left: 2.5vw; 
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    padding-right: 2.5vw;
+    position: relative; 
+    top: 12.5vw; 
+    left:63vw;  
+    cursor: pointer; 
+}
+.cloudaInfo .info-two .Reqdemo:hover{
+    background-color: $colortheme; 
+    color:white; 
+}
+.cloudaInfo .info-two .frame{
+    height: 30vw;
+    width: 45vw;
+    border: $colortheme 0.1vw solid; 
+    position: relative;
+    left: 9vw; 
+    top: -14.5vw; 
+}
+.cloudaInfo .info-two .frame2{
+    height: 12vw;
+    width: 27vw;
+    border: $colortheme 0.1vw solid; 
+    position: relative;
+    left: 5vw; 
+    top: -22vw; 
+}
+.cloudaInfo .info-three .header{
+    font-family: "Raleway";
+    font-size: 2.5vw; 
+    left: 10vw; 
+    width: 25vw; 
+    color: black; 
+    position: relative; 
+    text-align: left; 
+    top: -10vw; 
+    line-height: 3.5vw;
+}
+.cloudaInfo .info-three .detail{
+    font-family: "Raleway";
+    font-size: 0.915vw;
+    color: black; 
+    font-weight: 200; 
+    position:relative; 
+    top: -8vw; 
+    left:10vw; 
+    width: 22vw; 
+    line-height: 1.6vw;
+}
+.cloudaInfo .info-three .Reqdemo{
+    background-color: transparent; 
+    font-family: "Raleway";
+    color: $colortheme; 
+    border: $colortheme 0.1vw solid; 
+    font-size: 0.9vw; 
+    font-weight: 600;
+    padding-left: 2.5vw; 
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    padding-right: 2.5vw;
+    position: relative; 
+    top: -5vw; 
+    left:10vw;  
+    cursor: pointer; 
+}
+.cloudaInfo .info-three .Reqdemo:hover{
+    background-color: $colortheme; 
+    color:white; 
+}
+.cloudaInfo .info-three .frame{
+    height: 30vw;
+    width: 45vw;
+    border: $colortheme 0.1vw solid; 
+    position: relative;
+    left: 45vw; 
+    top: -33vw; 
+}
+.cloudaInfo .info-three .frame2{
+    height: 18vw;
+    width: 27vw;
+    border: $colortheme 0.1vw solid; 
+    position: relative;
+    left: 68vw; 
+    top: -47vw; 
+}
+.cloudaInfo .info-four .header{
+    font-family: "Raleway";
+    font-size: 2.5vw; 
+    left: 63vw; 
+    width: 25vw; 
+    color: black; 
+    position: relative; 
+    text-align: left; 
+    top: -35vw; 
+    line-height: 3.5vw;
+}
+.cloudaInfo .info-four .detail{
+    font-family: "Raleway";
+    font-size: 0.915vw;
+    color: black; 
+    font-weight: 200; 
+    position:relative; 
+    top: -33vw; 
+    left:63vw; 
+    width: 22vw; 
+    line-height: 1.6vw;
+}
+.cloudaInfo .info-four .Reqdemo{
+    background-color: transparent; 
+    font-family: "Raleway";
+    color: $colortheme; 
+    border: $colortheme 0.1vw solid; 
+    font-size: 0.9vw; 
+    font-weight: 600;
+    padding-left: 2.5vw; 
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    padding-right: 2.5vw;
+    position: relative; 
+    top: -30vw; 
+    left:63vw;  
+    cursor: pointer; 
+}
+.cloudaInfo .info-four .Reqdemo:hover{
+    background-color: $colortheme; 
+    color:white; 
+}
+.cloudaInfo .info-four .frame{
+    height: 30vw;
+    width: 45vw;
+    border: $colortheme 0.1vw solid; 
+    position: relative;
+    left: 9vw; 
+    top: -58vw; 
+}
+.cloudaInfo .info-four .frame2{
+    height: 18vw;
+    width: 27vw;
+    border: $colortheme 0.1vw solid; 
+    position: relative;
+    left: 5vw; 
+    top: -72vw; 
+}
+.cloudaInfo .info-five .detail{
+    width: 23vw;
+    height: 26vw; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    float: left;
+    margin-left: 5vw;
+    left: 5vw;
+    bottom: 55vw;
+    position: relative;
+}
+.trynow2{
+    height: 40vh; 
+    width: 100%;
+    background-color: $colortheme;
+    transform: translateY(115vw) !important; 
+    position:relative; 
+    z-index: 400 !important;
+    bottom: 115vw; 
+}
+.trynow2 .improve-headers{
+    font-family: "Raleway"; 
+    font-size: 3vw;
+    margin-top: -10vw;
+    text-align: center;
+    height: 1vw !important; 
+    width: 45vw; 
+    position: relative; 
+    left: 25vw; 
+    top: 4vw;
+    color:white; 
+}
+.trynow2 .gd{
+    opacity: 100%;
+    border: $colortheme 0.1vw solid;
+    background-color: white;
+    color: $colortheme; 
+    font-size: 1.0vw;
+    font-weight: 600;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.8vw; 
+    padding-bottom: 0.8vw;
+    letter-spacing: 0.2px; 
+    position:relative; 
+    top:12vw; 
+    left: 34vw; 
+    cursor:pointer; 
+    font-family: "Raleway"; 
+}
+.trynow2 .cu {
+    opacity: 100%;
+    border: white 0.1vw solid;
+    background-color: $colortheme;
+    color: white;
+    font-size: 1.0vw;
+    font-weight: 600;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    letter-spacing: 0.2px;
+    position: relative;
+    left: 35vw !important;
+    cursor: pointer;
+    top: 12vw;
+    font-family: "Raleway";
+}
+.ending-nav, .ending-nav-info, .desc, .logoname{
+    transform: translateY(2vw);
+}
+ /* .thelogo{
+    transform: scale(0.22) translateY(-200vw) translateX(6vw) !important;
+    position: relative; 
+    margin-bottom: 10vw;
+    margin-top: -200vw;
+    background-color: black;
+} */ 
+.ending{
+    transform: translateY(-5vw);
+    position:relative; 
+    height: 60vh !important;
+    width: 100%; 
+    background-color: #000d39;
+    margin-top: 0vw;
+    margin-bottom: -80vw !important;
+}
+.ending .desc{
+    color: white; 
+}
+.ending-nav div{
+    color:white !important; 
+}
+.ending-nav-info div a{
+    color:white !important; 
+    font-weight: 200 !important;
+}
+.ending .liners{
+    width: 80%; 
+    height: 0.05vw;
+    background-color: white;
+    position:relative; 
+    left: 10vw; 
+    top: 6vw; 
+}
+.logoname{
+    width: 10vw; 
+    left: 9.5vw !important; 
+    font-size: 1.5vw !important;
+    color: white !important; 
+}

@@ -1,0 +1,1899 @@
+@font-face {
+  font-family: "Albert";
+  src: url("AlbertSans-VariableFont_wght.qttf") format(TrueType);
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-Regular.ttf") format(TrueType);
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-Light.ttf") format(TrueType);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-Medium.ttf") format(TrueType);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-Thin.ttf") format(TrueType);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("NotoSans-SemiBold.ttf") format(TrueType);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Thin.ttf") format(TrueType);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-ExtraLight.ttf") format(TrueType);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.ttf") format(TrueType);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Medium.ttf") format(TrueType);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RedHat";
+  src: url("RedHatDisplay-VariableFont_wght.ttf") format(TrueType);
+}
+@font-face {
+  font-family: "Urania";
+  src: url("urania-regular.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Encode";
+  src: url("EncodeSansExpanded-Light.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Hans";
+  src: url("HankenGrotesk-VariableFont_wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Hans";
+  src: url("HankenGrotesk-VariableFont_wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Hans";
+  src: url("HankenGrotesk-VariableFont_wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat-VariableFont_wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("Manrope-VariableFont_wght.ttf.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("Cairo-VariableFont_slnt,wght.ttf") format(Truetype);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-VariableFont_wght.ttf") format(Truetype);
+}
+@keyframes open {
+  from {
+    height: 0;
+  }
+  to {
+    height: 15vw;
+  }
+}
+@keyframes hoverlineopen {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes openopacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes openss {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes moveup {
+  from {
+    transform: translate(0vw, 5vw);
+  }
+  to {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes moveright {
+  from {
+    transform: translate(5vw);
+  }
+  to {
+    transform: translate(0vw);
+  }
+}
+@keyframes moveleft {
+  from {
+    transform: translate(-5vw);
+  }
+  to {
+    transform: translate(0vw);
+  }
+}
+@keyframes openheight {
+  from {
+    height: 0vw;
+  }
+  to {
+    height: 5.5vw;
+    box-shadow: 0px 1px 10px rgba(195, 195, 195, 0.7333333333);
+  }
+}
+@keyframes openheightss {
+  from {
+    height: 0vw;
+  }
+  to {
+    height: 18vw;
+    box-shadow: 0px 1px 10px rgba(195, 195, 195, 0.7333333333);
+  }
+}
+@keyframes openblock {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+body {
+  margin: 0 0;
+  height: 500vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
+.navbar {
+  width: 100%;
+  height: 0vw;
+  position: fixed;
+  background-color: white;
+  margin: 0;
+  z-index: 800 !important;
+  animation: openheight 2s forwards;
+}
+
+.navbar div:not(:first-child) {
+  margin-top: 2.1vw;
+  margin-right: -0.9vw;
+  right: 5vw;
+  position: relative;
+  font-weight: 400;
+}
+
+.navbar div .name a {
+  font-family: "Raleway" !important;
+  font-size: 1.6vw;
+  color: #001763;
+  left: 13.2vw !important;
+  position: relative;
+  bottom: 0.3vw;
+  font-weight: 700;
+}
+
+.navbar div a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.022em;
+  font-size: 0.9vw;
+  text-align: right;
+}
+
+.navbar div {
+  float: left;
+  font-family: "Raleway";
+  text-decoration: none;
+}
+
+.navbar div:not(.hoverline) {
+  opacity: 0%;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.hoverline {
+  width: 6vw;
+  height: 0.1vw;
+  left: 4.7vw;
+  top: 1.22vw;
+  background-color: #001763;
+}
+
+.hoverline#hl-1 {
+  opacity: 0%;
+  width: 6vw !important;
+}
+
+.hoverline#hl-2 {
+  width: 9.8vw !important;
+  margin-left: -4.8vw;
+  left: 9vw;
+  opacity: 0%;
+}
+
+.hoverline#hl-3 {
+  width: 6.3vw !important;
+  margin-left: -1vw;
+  left: 5.1vw;
+  opacity: 0%;
+}
+
+.hoverline#hl-4 {
+  width: 4.7vw !important;
+  margin-left: 0.5vw;
+  left: 3.4vw;
+  opacity: 0%;
+}
+
+a.company:hover ~ .hoverline#hl-1,
+a.products:hover ~ .hoverline#hl-2,
+a.resources:hover ~ .hoverline#hl-3,
+a.contact:hover ~ .hoverline#hl-4 {
+  animation: hoverlineopen 1s forwards;
+}
+
+a.company:hover, a.products:hover, a.resources:hover, a.contact:hover {
+  color: #001763;
+}
+
+.hoverpages {
+  position: fixed;
+  z-index: 500 !important;
+  top: 1vw;
+}
+
+.hoverpages .hp {
+  width: 100%;
+  height: 38vw;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 7px 5px 0px rgba(193, 193, 193, 0.75);
+  position: fixed;
+  z-index: 400 !important;
+  top: 1vw;
+  display: none;
+  transition-duration: 2s;
+}
+
+.hoverpages div * {
+  display: block !important;
+}
+
+.hp .line {
+  height: 70%;
+  width: 0.1vw;
+  position: relative;
+  background-color: #001763;
+  left: 12.5vw;
+  top: 8vw;
+  z-index: 600 !important;
+}
+
+.products-hover-nav .ps2 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 15vw;
+  bottom: 20vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.products-hover-nav .ps2 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2.5vw;
+  font-weight: 500;
+}
+
+.products-hover-nav .ps3 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 40vw;
+  bottom: 47.3vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.products-hover-nav .ps3 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2.5vw;
+  font-weight: 500;
+}
+
+.company-hover-nav .cs2 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 15vw;
+  bottom: 20vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.company-hover-nav .cs2 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2.5vw;
+  font-weight: 500;
+}
+
+.resources-hover-nav .rs2 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 15vw;
+  bottom: 20vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.resources-hover-nav .rs2 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2vw;
+  font-weight: 500;
+}
+
+.resources-hover-nav .rs3 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 40vw;
+  bottom: 46.7vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.resources-hover-nav .rs3 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2.5vw;
+  font-weight: 500;
+}
+
+.resources-hover .line2 {
+  bottom: 68.9vw !important;
+}
+
+.hp .line2 {
+  width: 0.1vw;
+  position: relative;
+  height: 70%;
+  left: 37vw;
+  bottom: 81.5vw;
+  background-color: #001763;
+}
+
+.products-hover-nav .ps4 {
+  font-family: "Raleway";
+  color: rgb(159, 159, 159);
+  font-size: 0.85vw;
+  left: 68vw;
+  bottom: 70.5vw;
+  margin-bottom: 1vw;
+  position: relative;
+}
+
+.products-hover-nav .ps4 a {
+  text-decoration: none;
+  color: #001763;
+  font-size: 1vw;
+  margin-top: 2.5vw;
+  font-weight: 500;
+}
+
+.hp .line3 {
+  width: 0.1vw;
+  position: relative;
+  height: 70%;
+  left: 65vw;
+  bottom: 108.2vw;
+  background-color: #001763;
+}
+
+/* .products-hover{
+    width: 10.5vw; 
+    height: 0vw; 
+    position:relative; 
+    margin-right: -12vw !important; 
+    left: 0vw; 
+    top: 2vw; 
+    background-color: #002082;
+    display: block;
+    z-index: 50 !important;
+}
+ .products:hover > .products-hover{
+    animation: open 1.5s forwards; 
+} */
+.chevron {
+  margin-left: 1vw;
+  opacity: 50% !important;
+}
+
+.GetDemo {
+  opacity: 100%;
+  border: #001763 0.1vw solid;
+  background-color: #001763;
+  color: white;
+  font-size: 0.9vw;
+  font-weight: 500;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.6vw;
+  padding-bottom: 0.6vw;
+  letter-spacing: 0.2px;
+  position: relative;
+  margin-top: -1.5vw;
+  left: 4vw !important;
+  margin-left: 0.3vw;
+  cursor: pointer;
+  font-family: "Raleway";
+}
+
+.GetDemo:hover {
+  color: #001763;
+  background-color: transparent;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.GetDemo:hover a {
+  color: #001763 !important;
+}
+
+.GetDemo a {
+  color: white !important;
+}
+
+.logo {
+  margin-top: 1.9vw !important;
+  margin-left: -1.2vw;
+  margin-right: 44.8vw;
+  width: 2.9vw;
+  height: 1.67vw;
+  image-rendering: optimizeQuality;
+}
+
+.dashboard-image img {
+  opacity: 0%;
+}
+
+.cir {
+  width: 36vw;
+  height: 47.2vw;
+  position: relative;
+  left: 50vw;
+  top: 8.5vw;
+  animation: openopacity, moveup;
+  animation-duration: 2s, 3s;
+  animation-fill-mode: forwards, forwards;
+}
+
+.dash {
+  position: relative;
+  bottom: 34.8vw;
+  left: 21.8vw;
+  image-rendering: optimizeQuality;
+  width: 20vw;
+  height: 1.1vw;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.fg {
+  left: 0.6vw;
+  bottom: 22vw;
+  width: 21.9vw;
+  height: 12.1vw;
+  position: relative;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.sg {
+  left: 57.2vw;
+  bottom: 22.9vw;
+  width: 21.8vw;
+  height: 13.6vw;
+  position: relative;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.tg {
+  left: 35.5vw;
+  bottom: 12.5vw;
+  width: 21.2vw;
+  height: 11vw;
+  position: relative;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.cb {
+  width: 21.5vw;
+  height: 9.8vw;
+  position: relative;
+  bottom: 16vw;
+  right: 3.7vw;
+  animation: openopacity, moveleft;
+  animation-duration: 2s, 3s;
+  animation-fill-mode: forwards, forwards;
+}
+
+.fifty, .seventy, .ninety {
+  width: 4.8vw;
+  height: 4.8vw;
+  position: relative;
+  bottom: 18.7vw;
+  margin-right: 0.7vw;
+  right: 22.82vw;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.cb2 {
+  width: 21.5vw;
+  height: 9.8vw;
+  position: relative;
+  bottom: 42vw;
+  left: 75vw;
+  animation: openopacity, moveright;
+  animation-duration: 2s, 3s;
+  animation-fill-mode: forwards, forwards;
+}
+
+.shipped, .clients {
+  width: 9.9vw;
+  height: 6.3vw;
+  bottom: 43.8vw;
+  position: relative;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.shipped {
+  left: 54.3vw;
+}
+
+.clients {
+  left: 53.3vw;
+}
+
+.dashboard-image {
+  top: -1vw;
+  left: 1.5vw;
+  position: relative;
+  transform: scale(0.99);
+}
+
+.welcome .sample-data {
+  font-family: "Raleway";
+  font-size: 0.9vw;
+  position: relative;
+  border: 0.05vw solid #001763;
+  width: 5.6vw;
+  padding: 0.4vw 1.05vw 0.4vw 1.05vw;
+  bottom: 58.5vw;
+  left: 7.3vw;
+  opacity: 100%;
+  border-radius: 2vw;
+  font-weight: 400;
+  opacity: 0%;
+  color: #001763;
+  animation: openopacity 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.welcome .header {
+  font-family: "Raleway";
+  font-size: 4.5vw;
+  color: #001763;
+  font-weight: 500;
+  position: relative;
+  bottom: 57.5vw;
+  left: 6.8vw;
+  line-height: 5.7vw;
+  opacity: 0%;
+  animation: openopacity, moveleft;
+  animation-duration: 3s, 3s;
+  animation-fill-mode: forwards, forwards;
+}
+
+.welcome .description {
+  font-family: "Raleway";
+  font-size: 1.02vw;
+  color: black;
+  font-weight: 400;
+  position: relative;
+  bottom: 56vw;
+  width: 30vw;
+  left: 7.3vw;
+  line-height: 1.83vw;
+  animation: openopacity, moveleft;
+  animation-duration: 2s, 3s;
+  animation-fill-mode: forwards, forwards;
+}
+
+/* .welcome .Demoget{
+    font-family: "NotoSans"; 
+    font-size: 1.0vw; 
+    color: white; 
+    background-color: $colortheme; 
+    position:relative; 
+    bottom: 52.8vw;
+    left: 7.5vw; 
+    border: 0.1vw solid $colortheme; 
+    padding-left: 3.5vw; 
+    padding-top: 0.8vw; 
+    padding-bottom: 0.8vw;
+    padding-right: 3.5vw;
+    border-radius: 3vw;
+    font-weight: 580;
+    cursor: pointer;
+    letter-spacing: 0.015em;
+} */
+.welcome .Learnmore {
+  font-family: "Raleway";
+  font-size: 1vw;
+  bottom: 53.8vw;
+  left: 7.3vw;
+  color: white;
+  background-color: #001763;
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 30px;
+  border-radius: 0.1vw;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  border: 0.1vw solid #001763;
+  opacity: 100%;
+  animation: openopacity, moveleft;
+  animation-duration: 2s, 4s;
+  animation-fill-mode: forwards, forwards;
+}
+
+.welcome .Learnmore:hover {
+  color: #001763;
+  background-color: white;
+  transition-duration: 1s;
+}
+
+.bars {
+  display: none;
+}
+
+.features {
+  top: 5vw;
+  position: relative;
+}
+
+.features-header {
+  font-family: "Raleway";
+  font-size: 57px;
+  bottom: 40vw;
+  color: "$fonttheme";
+  font-weight: 200;
+  left: 0vw;
+  text-align: center;
+  position: relative;
+}
+
+.features-description {
+  font-family: "Raleway";
+  font-size: 0.91vw;
+  bottom: 41vw;
+  color: black;
+  font-weight: 500;
+  left: 42.4vw;
+  border-radius: 0.1vw;
+  border: 0.1vw solid black;
+  padding-left: 0vw;
+  padding-right: 0vw;
+  padding-bottom: 0.8vw;
+  padding-top: 0.8vw;
+  width: 13vw;
+  text-align: center;
+  position: relative;
+}
+
+.features .square {
+  float: left;
+  width: 18vw;
+  height: 22vw;
+  left: 12vw;
+  position: relative;
+  bottom: 35vw;
+  margin-left: 0.1vw;
+  background-color: rgb(247, 247, 247);
+  border: none;
+  color: black;
+}
+
+.features .square:hover {
+  cursor: pointer;
+}
+
+.features .square.inviews {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  background-color: #001763;
+  color: white;
+}
+
+.features .square i {
+  position: relative;
+  transform: scale(2.4);
+  top: -0.5vw;
+  right: 5.5vw;
+}
+
+.features .square .header {
+  font-family: "Raleway";
+  font-size: 1.5vw;
+  top: 1.5vw;
+  left: 2vw;
+  font-weight: 200;
+  position: relative;
+  text-align: left;
+}
+
+.features .square .description {
+  font-family: "Raleway";
+  font-size: 0.75vw;
+  top: 2vw;
+  left: 2vw;
+  width: 12.5vw;
+  position: relative;
+  text-align: left;
+}
+
+.business-needs {
+  position: relative;
+  top: 35vw !important;
+}
+
+.business-needs .header {
+  font-family: "Raleway";
+  font-size: 3.4vw;
+  position: relative;
+  text-align: left !important;
+  width: 30vw !important;
+  top: -15vw;
+  left: 9vw !important;
+  color: black !important;
+}
+
+.business-needs .description {
+  font-family: "Raleway";
+  font-size: 1vw;
+  top: -13vw;
+  left: 9.3vw;
+  line-height: 1.8vw;
+  position: relative;
+  text-align: left;
+  color: rgb(76, 76, 76);
+  width: 30vw;
+}
+
+.business-needs .description2 {
+  font-family: "Raleway";
+  width: 30vw;
+  font-size: 0.92vw;
+  bottom: 10vw;
+  left: 9.5vw;
+  position: relative;
+}
+
+.business-needs .description2 div {
+  margin-bottom: 1.4vw;
+}
+
+.business-needs .description2 div i {
+  margin-right: 2vw;
+  border: 0.1vw solid transparent;
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+  border-radius: 2vw;
+  background-color: rgb(225, 225, 225);
+}
+
+.business-needs .Performance-graph {
+  width: 25.4vw;
+  height: 33.6vw;
+  bottom: 38.5vw;
+  left: 47vw;
+  image-rendering: optimizeQuality;
+  position: relative;
+}
+
+.business-needs .inventory-graph {
+  position: relative;
+  width: 21.1vw;
+  height: 8.8vw;
+  bottom: 59vw;
+  left: 5vw;
+}
+
+.business-needs .revenue-graph {
+  position: relative;
+  width: 21vw;
+  height: 9.5vw;
+  bottom: 40vw;
+  left: 21vw;
+}
+
+.statistics {
+  width: 85%;
+  height: 13.5vw;
+  position: relative;
+  left: 7.5vw;
+  bottom: -8vw;
+  background-color: rgb(241, 241, 241) !important;
+}
+
+.statistics .numbers {
+  float: left;
+  font-family: "Raleway";
+  font-size: 3.2vw;
+  color: #001763;
+  position: relative;
+  margin-right: 22vw;
+  left: 5.5vw;
+  top: 3vw;
+}
+
+.statistics .infos {
+  float: left;
+  font-family: "Raleway";
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #001763;
+  position: relative;
+  width: 20vw;
+  top: 4.2vw;
+  left: 5.5vw;
+  margin-right: 7.8vw;
+}
+
+.statistics .liner {
+  background-color: #001763;
+  width: 0.08vw;
+  height: 8vw;
+  float: left;
+  margin-left: 29vw;
+  bottom: 3.2vw;
+  right: 1vw;
+  position: relative;
+}
+
+.gdemo {
+  opacity: 100%;
+  border: #001763 0.5vw solid;
+  background-color: #001763 !important;
+  font-size: 0.95vw;
+  font-weight: 200;
+  padding-left: 1.7vw;
+  padding-top: 0.4vw;
+  padding-bottom: 0.4vw;
+  padding-right: 1.7vw;
+  border-radius: 0.1vw;
+  letter-spacing: 0.2px;
+  color: white;
+  font-family: "Raleway";
+  position: relative;
+  top: -39.5vw;
+  left: 9vw;
+}
+
+.Brand-guide .header {
+  font-family: "Raleway";
+  font-size: 3.4vw;
+  position: relative;
+  text-align: right !important;
+  width: 30vw !important;
+  bottom: 23vw !important;
+  left: 58vw !important;
+  color: black !important;
+}
+
+.Brand-guide .description {
+  font-family: "Raleway";
+  font-size: 1vw;
+  top: -21vw;
+  left: 58vw;
+  line-height: 1.8vw;
+  position: relative;
+  text-align: right;
+  color: rgb(76, 76, 76);
+  width: 30vw;
+}
+
+.Brand-guide .description2 {
+  font-family: "Raleway";
+  width: 30vw;
+  font-size: 0.92vw;
+  bottom: 18vw;
+  left: 58vw;
+  position: relative;
+}
+
+.Brand-guide .description2 div {
+  margin-bottom: 1.4vw;
+  text-align: right;
+}
+
+.Brand-guide .description2 div i {
+  margin-left: 2vw;
+  border: 0.1vw solid transparent;
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+  border-radius: 2vw;
+  background-color: rgb(225, 225, 225);
+}
+
+.Brand-guide .Performance-graph {
+  width: 25.4vw;
+  height: 33.6vw;
+  left: 8vw;
+  bottom: 47vw;
+  image-rendering: optimizeQuality;
+  position: relative;
+}
+
+.Brand-guide .inventory-graph {
+  position: relative;
+  width: 21.1vw;
+  height: 8.8vw;
+  bottom: 50vw;
+  left: 2vw;
+}
+
+.Brand-guide .revenue-graph {
+  position: relative;
+  width: 21vw;
+  height: 9.5vw;
+  bottom: 67vw;
+  left: -54vw;
+}
+
+.gdemo2 {
+  opacity: 100%;
+  border: #001763 0.5vw solid;
+  background-color: #001763 !important;
+  font-size: 0.95vw;
+  font-weight: 200;
+  padding-left: 1.7vw;
+  padding-top: 0.4vw;
+  padding-bottom: 0.4vw;
+  padding-right: 1.7vw;
+  border-radius: 0.1vw;
+  letter-spacing: 0.2px;
+  color: white;
+  font-family: "Raleway";
+  position: relative;
+  top: -48.5vw;
+  left: 79vw;
+}
+
+.Brand-guide {
+  position: relative;
+  top: 42vw;
+}
+
+.dashboard-guide {
+  width: 100%;
+  height: 85vw;
+  background-color: #001763;
+  top: 7.5vw;
+  position: relative;
+}
+
+.dashboard-guide .fulldash {
+  width: 83.7vw;
+  height: 51vw;
+  position: relative;
+  bottom: -5vw;
+  image-rendering: optimizeQuality;
+  left: 7.5vw;
+}
+
+.dashboard-guide .header {
+  color: white;
+  font-weight: 200;
+  font-family: "Raleway";
+  position: relative;
+  font-size: 3.7vw;
+  left: 17vw;
+  bottom: 65vw;
+  line-height: 4.7vw;
+  letter-spacing: 0.05vw;
+  width: 60vw;
+  text-align: center;
+}
+
+.dashboard-guide .information {
+  color: white;
+  font-family: "Raleway";
+  position: relative;
+  font-size: 1.2vw;
+  font-weight: 200;
+  width: 50vw;
+  bottom: 63.5vw;
+  left: 20vw;
+  text-align: center;
+}
+
+.det button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  bottom: 55vw;
+  font-family: "Raleway";
+  font-size: 1.1vw;
+  left: 5.9vw;
+  cursor: pointer;
+}
+
+.det .info {
+  position: relative;
+  font-size: 0.9vw;
+  font-family: "Raleway";
+  bottom: 55vw;
+  left: 6.2vw;
+  color: rgb(200, 200, 200);
+  margin-bottom: 1vw;
+  margin-top: 0.5vw;
+  width: 32vw;
+  display: none;
+  line-height: 1.7vw;
+}
+
+.det button i {
+  color: white;
+  margin-left: 18vw !important;
+  position: relative;
+  border: 0.2vw solid white;
+  padding: 0.6vw 0.5vw 0.3vw 0.5vw;
+  border-radius: 10vw;
+  transform: scale(0.6);
+}
+
+.det .line {
+  background-color: rgb(200, 200, 200);
+  width: 36vw;
+  height: 0.1vw;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+}
+
+.info.show {
+  display: block;
+}
+
+.dashboard-guide .Learn-Mores {
+  background-color: #001557;
+  padding-left: 1.2vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  padding-right: 0.8vw;
+  border: solid white 0.1vw;
+  color: white;
+  font-family: "Raleway";
+  font-size: 1vw;
+  position: relative;
+  bottom: 53.2vw;
+  left: 6.4vw;
+  width: 5.8vw;
+  cursor: pointer;
+}
+
+.dashboard-guide .Learn-Mores:hover {
+  background-color: white;
+  color: #001763;
+  font-weight: 600;
+}
+
+.questions .questions-header {
+  font-family: "Raleway";
+  font-size: 4vw;
+  color: black;
+  font-weight: 300;
+  line-height: 5vw;
+  position: relative;
+  top: -8vw;
+  left: 8vw;
+}
+
+.questions .details {
+  font-family: "Raleway";
+  font-size: 1vw;
+  width: 30vw !important;
+  color: black;
+  position: relative;
+  top: -6.5vw;
+  font-weight: 400;
+  right: -8.5vw;
+  line-height: 1.7vw;
+}
+
+.questions .cu {
+  font-family: "Raleway";
+  color: #001ba2;
+  font-size: 1vw;
+  position: relative;
+  top: -4vw;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  right: -8vw;
+}
+
+.questions .cu i {
+  margin-left: 0.5vw;
+}
+
+.questions {
+  top: 15vw;
+  left: 1.5vw;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  bottom: 24vw;
+  left: 53vw;
+}
+
+.dropdown .head button {
+  font-family: "Raleway";
+  background-color: transparent;
+  border: none;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 1.2vw;
+  margin-top: 1.2vw;
+  cursor: pointer;
+}
+
+.dropdown .head button .ad {
+  margin-left: 22.5vw;
+  transform: rotate("0deg");
+}
+
+.dropdown .liners {
+  width: 34vw;
+  height: 0.05vw;
+  background-color: black;
+}
+
+.dropdown .head .infos {
+  width: 33vw;
+  line-height: 1.7vw;
+  font-size: 0.81vw;
+  margin-bottom: 1vw;
+  font-family: "Raleway";
+  display: none;
+  margin-left: 0.5vw;
+}
+
+.infos.shower {
+  display: block !important;
+}
+
+.ad.shower {
+  transform: rotate(180deg);
+}
+
+.trynow {
+  width: 100%;
+  height: 23vw;
+  background-color: #001763 !important;
+  position: relative;
+  bottom: 1vw;
+  left: 0vw;
+}
+
+.trynow .improve-header {
+  font-family: "Raleway";
+  font-size: 3.1vw;
+  font-weight: 200;
+  color: white;
+  position: relative;
+  top: 5.5vw;
+  text-align: center;
+  left: 25.5vw;
+  width: 45vw;
+}
+
+.trynow .details {
+  color: rgb(219, 219, 219);
+  font-family: "RedHat";
+  font-size: 1.25vw;
+  width: 50vw;
+  position: relative;
+  top: 8vw;
+  right: -7vw;
+}
+
+.trynow .gd {
+  opacity: 100%;
+  border: #001763 0.1vw solid;
+  background-color: white;
+  color: #001763;
+  font-size: 1vw;
+  font-weight: 600;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  letter-spacing: 0.2px;
+  position: relative;
+  left: 33vw !important;
+  cursor: pointer;
+  top: 8vw;
+  margin-right: 3vw;
+  font-family: "Raleway";
+}
+
+.trynow .gd:hover {
+  background-color: #001763;
+  color: white;
+  border: white 0.1vw solid;
+  transition-duration: 1s;
+}
+
+.trynow .cu {
+  opacity: 100%;
+  border: white 0.1vw solid;
+  background-color: #001763;
+  color: white;
+  font-size: 1vw;
+  font-weight: 600;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  letter-spacing: 0.2px;
+  position: relative;
+  left: 33vw !important;
+  cursor: pointer;
+  top: 8vw;
+  font-family: "Raleway";
+}
+
+.trynow .cu:hover {
+  border-color: #001763;
+  background-color: white;
+  color: #001763;
+  transition-duration: 1s;
+}
+
+.ending {
+  width: 100%;
+  height: 45vh;
+  background-color: #000d39;
+  position: relative;
+  top: -1vw;
+}
+
+.thelogo {
+  position: relative;
+  transform: scale(0.22);
+  image-rendering: crisp-edges;
+  position: relative;
+  left: 4vw;
+  top: 0.7vw;
+  opacity: 0%;
+}
+
+.ending .logoname {
+  position: relative;
+  color: white;
+  font-family: "Raleway";
+  font-size: 1.8vw;
+  font-weight: 700;
+  left: 9.5vw;
+  bottom: 4.8vw;
+}
+
+.ending .desc {
+  position: relative;
+  color: white;
+  font-family: "Raleway";
+  font-size: 0.8vw;
+  width: 20vw;
+  bottom: 3.8vw;
+  left: 9.5vw;
+  line-height: 1.5vw;
+}
+
+.ending-nav div {
+  float: left;
+  color: white;
+  font-weight: 300;
+  font-size: 1.1vw;
+  font-family: "Raleway";
+  margin-left: 7.9vw;
+  bottom: 12.5vw;
+  left: 38vw;
+  position: relative;
+}
+
+.ending-nav-info {
+  background-color: black;
+  height: 0vw;
+}
+
+.ending-nav-info .navinfosone {
+  position: relative;
+  bottom: 10.5vw;
+  width: 30vw;
+  left: 46.3vw;
+}
+
+.ending-nav-info .navinfostwo {
+  position: relative;
+  bottom: 20.6vw;
+  width: 30vw;
+  left: 59.3vw;
+}
+
+.ending-nav-info .navinfosthree {
+  position: relative;
+  bottom: 28.2vw;
+  width: 30vw;
+  left: 72.1vw;
+}
+
+.ending-nav-info .navinfosfour {
+  position: relative;
+  bottom: 35.7vw;
+  width: 30vw;
+  left: 84.6vw;
+}
+
+.ending-nav-info div div {
+  margin-bottom: 1.5vw;
+  font-family: "Raleway";
+  font-size: 0.91vw;
+}
+
+.ending-nav-info div div a {
+  text-decoration: none;
+  color: white;
+}
+
+.ending-nav-info div div a:hover {
+  font-weight: 600;
+  color: #001763;
+}
+
+.final-line {
+  width: 90%;
+  height: 0.05vw;
+  background-color: white;
+  position: relative;
+  top: 4vw;
+  left: 5.3vw;
+}
+
+.tag {
+  transform: translateY(50px) rotate(-5deg) translateZ(0);
+  transition-delay: 0.3s;
+  transition: 0.4s;
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+.tag.View {
+  opacity: 100%;
+  transform: translateY(0px) rotate(0deg) translateZ(0);
+  transform: translate(0, 0);
+  animation-fill-mode: forwards;
+}
+
+.smallnav {
+  display: none !important;
+}
+
+@media screen and (max-width: 900px) {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .navbar {
+    animation: openheightss 2s forwards;
+  }
+  .company, .products, .resources, .contact, .GetDemo {
+    display: none;
+  }
+  .logo {
+    width: 10.8vw !important;
+    height: 6.5vw !important;
+    margin-left: -16.5vw !important;
+    margin-top: 5.7vw !important;
+  }
+  .navbar div .name {
+    font-size: 6vw !important;
+    font-weight: 500 !important;
+    left: 20vw !important;
+    bottom: -3.2vw !important;
+  }
+  .bars {
+    display: block;
+    background-color: transparent;
+    color: black;
+    transform: scale(2.1);
+    position: relative;
+    top: 6.5vw;
+    left: 24.5vw;
+    opacity: 0%;
+    border: none;
+    animation: openopacity 2s forwards;
+    animation-delay: 1.5s;
+  }
+  .smallnav {
+    background-color: white;
+    width: 0%;
+    height: 0%;
+    z-index: 0 !important;
+    position: relative !important;
+    bottom: 0;
+    opacity: 0%;
+    display: none !important;
+  }
+  .smallnav.viewing {
+    z-index: 900 !important;
+    position: fixed !important;
+    display: block !important;
+    animation: openss 0.5s forwards;
+  }
+  .smallnav .x-button {
+    transform: scale(2.5);
+    background-color: transparent;
+    position: relative;
+    color: black;
+    float: right;
+    left: -6vw;
+    top: 8vw;
+  }
+  .smallnav .linetwo {
+    width: 100vw;
+    height: 0.2vw;
+    background-color: rgb(235, 235, 235);
+    left: 0vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .smallnav a {
+    color: black;
+    font-size: 3.8vw;
+    font-weight: 200;
+    font-family: "Raleway";
+    text-decoration: none;
+    padding-left: 5vw;
+    background-color: white;
+    font-weight: 300;
+  }
+  .sn-company.views, .sn-resources.views, .sn-products.views {
+    background-color: #fafafa;
+  }
+  .smallnav .sn-company, .smallnav .sn-products, .smallnav .sn-resources, .smallnav .sn-contact {
+    display: block;
+    padding-top: 5vw !important;
+    padding-bottom: 5vw !important;
+  }
+  .smallnav a.sn-company i {
+    margin-left: 63vw;
+    position: relative;
+  }
+  .smallnav a.sn-products i {
+    margin-left: 45vw;
+    position: relative;
+  }
+  .smallnav a.sn-resources i {
+    margin-left: 61.4vw;
+    position: relative;
+  }
+  .smallnav a, .smallnav .linetwo {
+    position: relative;
+    top: 25vw;
+  }
+  .smallnav .sn-company-infos {
+    width: 20vw !important;
+    display: none;
+  }
+  .smallnav .sn-products-infos {
+    width: 20vw !important;
+    display: none;
+  }
+  .smallnav .sn-resources-infos {
+    width: 20vw !important;
+    display: none;
+  }
+  .smallnav div a {
+    display: block;
+    color: rgb(70, 70, 70);
+    font-weight: 300;
+    font-size: 3.7vw;
+    padding-top: 3vw !important;
+    padding-left: 12vw !important;
+    right: 5vw !important;
+    background-color: #fafafa;
+    width: 100vw;
+    padding-bottom: 5vw !important;
+    top: 25vw;
+  }
+  .smallnav .Gtd {
+    background-color: #001763;
+    border: #001763 0.2vw solid;
+    padding: 3vw 3vw 3vw 3vw;
+    top: 32vw;
+    color: white;
+    font-size: 3.8vw;
+    font-family: "Raleway";
+    position: relative;
+  }
+  .smallnav .Lmb {
+    background-color: transparent;
+    border: #001763 0.2vw solid;
+    padding: 3vw 3vw 3vw 3vw;
+    top: 32vw;
+    color: #001763;
+    font-size: 3.8vw;
+    font-family: "Raleway";
+    position: relative;
+    margin-right: 4vw;
+    margin-left: 5vw;
+  }
+  .smallnav .linetwotwo#two {
+    top: 13vw !important;
+    position: relative;
+    width: 100vw;
+    height: 0.2vw;
+    background-color: rgb(235, 235, 235);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .dashboard-image {
+    display: none;
+  }
+  .ending {
+    position: relative !important;
+    top: 800vw !important;
+  }
+  .welcome {
+    background-color: rgba(0, 20, 87, 0.0705882353);
+    height: 170vw;
+    width: 100%;
+  }
+  .welcome *:not(.navbar) {
+    text-align: left;
+    top: 30vw !important;
+  }
+  .welcome .sample-data {
+    font-size: 80%;
+    width: 25vw;
+    border-radius: 5vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1.3vw;
+    left: 35vw;
+    top: 35vw !important;
+    text-align: center;
+  }
+  .welcome .header {
+    font-size: 320%;
+    line-height: 14vw;
+    position: relative;
+    text-align: center;
+    left: 0vw !important;
+    top: 38vw !important;
+  }
+  .welcome .description {
+    font-size: 90%;
+    top: 43vw !important;
+    width: 88%;
+    left: 7vw !important;
+    text-align: center;
+    line-height: 5.5vw;
+  }
+  .welcome .Learnmore {
+    font-size: 100%;
+    position: relative;
+    padding: 2vw 5vw 2vw 5vw;
+    left: 36vw !important;
+    top: 48vw !important;
+  }
+  .features-description {
+    font-size: 80%;
+    width: 45vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    top: 15vw;
+    left: 28vw;
+  }
+  .features-header {
+    top: 20vw !important;
+    font-size: 180%;
+    left: 1vw;
+  }
+  .features .square {
+    top: 65vw !important;
+    position: relative;
+    width: 20%;
+    transform: scale(4.2);
+    left: 40vw;
+    margin-right: 40vw !important;
+    margin-bottom: 75vw !important;
+  }
+  body {
+    height: 1000vh !important;
+  }
+  .dashboard-guide {
+    top: 490vw;
+    transform: scale(2.2);
+  }
+  .dashboard-guide .header {
+    color: white;
+    bottom: 430vw;
+    left: 30vw;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    position: relative;
+    width: 40vw;
+    font-size: 90%;
+    opacity: 100%;
+  }
+  .dashboard-guide .information {
+    bottom: 428vw;
+    width: 35vw;
+    left: 32vw;
+    font-size: 1.35vw;
+  }
+  .dashboard-guide .fulldash {
+    bottom: 357vw !important;
+    left: 23vw;
+    transform: scale(0.79);
+  }
+  .business-needs .header {
+    font-size: 230%;
+    text-align: center !important;
+    top: 245vw !important;
+    position: relative;
+    width: 80vw !important;
+  }
+  .business-needs .Performance-graph {
+    transform: scale(2.5);
+    position: relative;
+    left: 28vw !important;
+    bottom: -265vw !important;
+  }
+  .business-needs .description {
+    transform: scale(3.5);
+    width: 24vw;
+    position: relative;
+    top: 360vw !important;
+    left: 38vw !important;
+    text-align: center !important;
+  }
+  .business-needs .description2 {
+    transform: scale(3.3);
+    width: 25vw;
+    position: relative;
+    top: 392vw !important;
+    left: 44vw !important;
+    text-align: left !important;
+  }
+  .business-needs .description2 div {
+    margin-bottom: 2.5vw !important;
+  }
+  .business-needs .gdemo {
+    transform: scale(3.3);
+    position: relative;
+    top: 390vw !important;
+    left: 45vw !important;
+  }
+  .Brand-guide .header {
+    font-size: 230%;
+    text-align: center !important;
+    top: 400vw !important;
+    left: 10vw !important;
+    position: relative;
+    width: 80vw !important;
+  }
+  .Brand-guide .Performance-graph {
+    transform: scale(2.5);
+    position: relative;
+    left: 28vw !important;
+    bottom: -425vw !important;
+  }
+  .Brand-guide .description {
+    transform: scale(3.5);
+    width: 24vw;
+    position: relative;
+    top: 515vw !important;
+    left: 38vw !important;
+    text-align: center !important;
+  }
+  .Brand-guide .description2 {
+    transform: scale(3.5);
+    width: 24vw;
+    position: relative;
+    top: 547vw !important;
+    left: 33vw !important;
+    text-align: center !important;
+  }
+  .Brand-guide .gdemo2 {
+    transform: scale(3.3);
+    position: relative;
+    top: 545vw !important;
+    left: 45vw !important;
+  }
+  .questions .questions-header {
+    transform: scale(2.5) !important;
+    text-align: center;
+    top: 620vw !important;
+    left: 2vw !important;
+  }
+  .questions .details {
+    transform: scale(3.3);
+    position: relative;
+    top: 638vw !important;
+    width: 23vw !important;
+    left: 38vw !important;
+    text-align: center;
+  }
+  .questions .cu {
+    transform: scale(3.3);
+    position: relative;
+    top: 650vw !important;
+    left: 46vw !important;
+  }
+  .questions .dropdown {
+    transform: scale(4.2);
+    position: relative;
+    top: 710vw !important;
+    left: 167vw !important;
+  }
+  .questions .dropdown .head .infos {
+    margin-left: 1vw;
+    width: 19vw !important;
+  }
+  .questions .dropdown .head button .ad {
+    margin-left: 8vw;
+    transform: rotate("0deg");
+  }
+  .questions .dropdown .head button {
+    color: black !important;
+    font-weight: 500;
+  }
+  .questions .dropdown .liners {
+    width: 19vw;
+    height: 0.12vw;
+    background-color: black;
+    margin-top: 1vw !important;
+    margin-left: 1vw;
+  }
+  .trynow {
+    height: 75vw;
+    bottom: -785vw !important;
+  }
+  .trynow .improve-header {
+    transform: scale(2.3);
+    width: 40vw !important;
+    top: 20vw;
+    left: 30vw;
+  }
+  .trynow .gd {
+    transform: scale(2.8);
+    font-weight: 300;
+    top: 37vw !important;
+    left: 62vw !important;
+  }
+  .trynow .cu {
+    transform: scale(2.8);
+    font-weight: 300;
+    top: 37vw !important;
+    left: 11vw !important;
+  }
+  .ending .thelogo {
+    transform: scale(0.3);
+    image-rendering: optimizeQuality;
+    top: -15vw !important;
+    opacity: 0% !important;
+    left: -10vw !important;
+  }
+  .ending .logoname {
+    transform: scale(4.5);
+    font-weight: 500;
+    left: 203vw !important;
+    bottom: 33vw;
+  }
+  .ending .desc {
+    display: none;
+  }
+  .statistics {
+    display: none !important;
+    opacity: 0%;
+  }
+  .ending-nav div {
+    display: block;
+    transform: scale(3.5);
+    margin-bottom: 50vw !important;
+    font-weight: 400;
+    left: 119vw !important;
+    float: none;
+  }
+  .ending-nav-info div {
+    transform: scale(2);
+    float: none;
+  }
+  .ending-nav-info .navinfosone div {
+    bottom: 400vw !important;
+    margin-bottom: 4vw;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .welcome {
+    transform: scale(0.92);
+    bottom: 4vw !important;
+    position: relative;
+  }
+  .welcome .dashboard-image {
+    left: 4vw !important;
+    transform: scale(0.995);
+  }
+  .welcome div:not(.dashboard-image), .welcome button {
+    position: relative;
+    left: 4vw !important;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,132 @@
+$colortheme: #001763; 
+body{
+    height:250vh !important; 
+}
+.team-members .tiers .squ{
+    height: 29vw;
+    width: 27%; 
+    border: 0.1vw solid $colortheme; 
+    float:left;
+    margin-left: 3vw;
+    position:relative; 
+    left: 3.5vw;   
+    margin-bottom: 11vw; 
+}
+.team-members .tiers{
+    width: 100%; 
+    top: 19vw; 
+    position: relative;
+}
+.team-members .tiers .squ .role{
+    font-family: "Raleway";
+    font-size: 1.3vw; 
+    position: relative; 
+    top: 31.5vw; 
+    color: $colortheme;
+    font-weight: 300;
+}
+.team-members .tiers .squ .name{
+    font-family: "Raleway";
+    font-size: 1.5vw; 
+    position: relative; 
+    top: 31vw;
+    color: $colortheme;
+}
+.team-members .header{
+    font-family: "Raleway";
+    font-size: 4vw;
+    position:relative;  
+    color: $colortheme; 
+    top: 10vw; 
+    text-align: center;
+    left: -1vw; 
+}
+.team-members .descr{
+    font-family: "Raleway";
+    font-size: 1.1vw; 
+    color: $colortheme; 
+    position:relative; 
+    text-align: center; 
+    top: 12vw; 
+    left: 28vw; 
+    width: 40vw; 
+
+}
+ .trynow2{
+    height: 40vh; 
+    width: 100%;
+    background-color: $colortheme;
+    transform: translateY(115vw) !important; 
+    position:relative; 
+}
+.trynow2 .improve-headers{
+    font-family: "Raleway"; 
+    font-size: 3vw;
+    margin-top: -10vw;
+    text-align: center;
+    height: 1vw !important; 
+    width: 45vw; 
+    position: relative; 
+    left: 25vw; 
+    top: 4vw;
+    color:white; 
+}
+.trynow2 .gd{
+    opacity: 100%;
+    border: $colortheme 0.1vw solid;
+    background-color: white;
+    color: $colortheme; 
+    font-size: 1.0vw;
+    font-weight: 600;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.8vw; 
+    padding-bottom: 0.8vw;
+    letter-spacing: 0.2px; 
+    position:relative; 
+    top:12vw; 
+    left: 34vw; 
+    cursor:pointer; 
+    font-family: "Raleway"; 
+}
+.trynow2 .cu {
+    opacity: 100%;
+    border: white 0.1vw solid;
+    background-color: $colortheme;
+    color: white;
+    font-size: 1.0vw;
+    font-weight: 600;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    letter-spacing: 0.2px;
+    position: relative;
+    left: 35vw !important;
+    cursor: pointer;
+    top: 12vw;
+    font-family: "Raleway";
+}
+.ending-nav, .ending-nav-info, .desc, .logoname{
+    transform: translateY(-60vw);
+}
+ /* .thelogo{
+    transform: scale(0.22) translateY(-200vw) translateX(6vw) !important;
+    position: relative; 
+    margin-bottom: 10vw;
+    margin-top: -200vw;
+    background-color: black;
+} */ 
+.ending{
+    transform: translateY(115vw);
+    position:relative; 
+    height: 40vh !important;
+    width: 100%; 
+    background-color: white;
+    margin-top: 0vw;
+}
+.logoname{
+    width: 10vw; 
+    font-size: 1.5vw !important;
+}
+
